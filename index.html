@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MyStore - Your Shopping Destination</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header>
     <h1>Welcome to MyStore</h1>
     <nav>
       <a href="#">Home</a>
       <a href="#">Products</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -21,9 +22,9 @@
       <h2>Shop the Latest Trends</h2>
       <p>Find the best deals on clothing and electronics. Affordable prices. Fast delivery.</p>
     </section>
-    <h2>Featured Products</h2><br>
-    <section class="products">
 
+    <h2>Featured Products</h2>
+    <section class="products">
       <div class="product-card">
         <img src="images/tshirt.jpg" alt="T-shirt">
         <h3>Comfort Fit T-Shirt</h3>
@@ -32,7 +33,7 @@
       </div>
 
       <div class="product-card">
-        <img src="images/shoes.jpg" alt="T-shirt">
+        <img src="images/shoes.jpg" alt="Shoes">
         <h3>Running Shoes</h3>
         <p>Price: ₹1999</p>
         <button onclick="addToCart('Running Shoes')">Add to Cart</button>
@@ -46,6 +47,16 @@
       </div>
     </section>
 
+    <h2>Contact Us</h2>
+    <section class="contact-form" id="contact">
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="formMsg"></p>
+      </form>
+    </section>
   </main>
 
   <footer>
