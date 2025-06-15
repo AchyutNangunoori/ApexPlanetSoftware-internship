@@ -28,3 +28,36 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   msg.style.color = "green";
   this.reset();
 });
+
+const images = ["images/tshirt.jpg", "images/shoes.jpg", "images/smartphone.jpg"];
+let current = 0;
+
+function showImage(index) {
+  const img = document.getElementById("carouselImage");
+  img.src = images[index];
+}
+
+function nextImage() {
+  current = (current + 1) % images.length;
+  showImage(current);
+}
+
+function prevImage() {
+  current = (current - 1 + images.length) % images.length;
+  showImage(current);
+}
+
+function getJoke() {
+  fetch("https://icanhazdadjoke.com/", {
+    headers: {
+      Accept: "application/json"
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("jokeText").textContent = data.joke;
+  })
+  .catch(err => {
+    document.getElementById("jokeText").textContent = "Oops! Couldn't fetch a joke.";
+  });
+}
