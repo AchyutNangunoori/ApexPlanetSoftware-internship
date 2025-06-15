@@ -155,3 +155,58 @@ footer {
     width: 90%;
   }
 }
+
+.carousel {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.carousel img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+
+.carousel-controls button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.carousel-controls button:hover {
+  background-color: #e34e3b;
+}
+
+.joke-api {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.joke-api button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.joke-api button:hover {
+  background-color: #0056b3;
+}
+
+#jokeText {
+  font-style: italic;
+  font-size: 18px;
+}
