@@ -24,29 +24,27 @@
     </section>
 
     <h2>Featured Products</h2>
-    <section class="products">
-      <div class="product-card">
-        <img src="images/tshirt.jpg" alt="T-shirt">
-        <h3>Comfort Fit T-Shirt</h3>
-        <p>Price: ₹499</p>
-        <button onclick="addToCart('Comfort Fit T-Shirt')">Add to Cart</button>
-      </div>
 
-      <div class="product-card">
-        <img src="images/shoes.jpg" alt="Shoes">
-        <h3>Running Shoes</h3>
-        <p>Price: ₹1999</p>
-        <button onclick="addToCart('Running Shoes')">Add to Cart</button>
-      </div>
+    <!-- Filters -->
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="clothing">Clothing</option>
+        <option value="electronics">Electronics</option>
+      </select>
 
-      <div class="product-card">
-        <img src="images/smartphone.jpg" alt="Smartphone">
-        <h3>Smartphone Pro Max</h3>
-        <p>Price: ₹12,999</p>
-        <button onclick="addToCart('Smartphone Pro Max')">Add to Cart</button>
-      </div>
+      <select id="sortOption">
+        <option value="default">Sort By</option>
+        <option value="priceAsc">Price Low to High</option>
+        <option value="priceDesc">Price High to Low</option>
+      </select>
+    </div>
+
+    <section class="products" id="productList">
+      <!-- Products will be rendered here dynamically -->
     </section>
 
+    <!-- Carousel, joke API, contact form remain unchanged -->
     <h2>Explore Our Gallery</h2>
     <section class="carousel">
       <img id="carouselImage" src="images/tshirt.jpg" alt="carousel image" />
